@@ -20,7 +20,7 @@ def ising_model_1d(n, steps):
             qc.cx(qubit, qubit + 1)
         # Appliquer une rotation Rz sur chaque qubit
         for qubit in range(n):
-            qc.rz(np.pi / 4, qubit)  # exemple de rotation
+            qc.rz(1, qubit)  # exemple de rotation
 
     # Étape 4 : Mesurer les qubits
     qc.measure(qr, cr)
